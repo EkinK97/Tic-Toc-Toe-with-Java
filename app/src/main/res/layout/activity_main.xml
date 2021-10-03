@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:background="@color/teal_700"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="84dp"
+        android:text="@string/x_o_x_game"
+        android:textColor="@color/purple_500"
+        android:textColorHighlight="@color/black"
+        android:textSize="45sp"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="317dp"
+        android:layout_height="299dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="42dp"
+        android:background="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/bt11"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                app:iconTint="#FFFFFF"
+                app:rippleColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/bt12"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:layout_marginStart="4dp" />
+
+            <Button
+                android:id="@+id/bt13"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:layout_marginStart="4dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bt21"
+                android:layout_width="100dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:layout_height="100dp" />
+
+            <Button
+                android:id="@+id/bt22"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:layout_marginStart="4dp" />
+
+            <Button
+                android:id="@+id/bt23"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:layout_marginStart="4dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <Button
+                android:id="@+id/bt31"
+                android:layout_width="100dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:layout_height="100dp" />
+
+            <Button
+                android:id="@+id/bt32"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:layout_marginStart="4dp" />
+
+            <Button
+                android:id="@+id/bt33"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black" />
+        </TableRow>
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/editTextTextTurn"
+        android:layout_width="204dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="#3F51B5"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.8"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/NewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/new_game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult" />
+
+    <EditText
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="#3F51B5"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        android:importantForAutofill="no" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
